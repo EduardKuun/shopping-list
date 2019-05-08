@@ -1,0 +1,150 @@
+.secondary-content i {
+  color: #333333 !important;
+}
+.secondary-content:hover i {
+  color: #525252 !important;
+  cursor: pointer;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #555 !important;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #555 !important;
+  box-shadow: 0 1px 0 0 #555 !important;
+}
+.card-action {
+  padding: 15px !important;
+}
+.card-action .card-title {
+  padding: 10px;
+}
+.add-item-button {
+  margin-left: 10px;
+}
+.clear-items, .add-item-button {
+  transition: 0.1s !important;
+}
+
+.collection {
+  border: 1px solid white !important;
+}
+.collection-item {
+  transition: 0.5s;
+  border: 0 !important;
+  border-radius: 4px;
+  margin: 2px !important;
+}
+.collection-item:hover {
+  background-color: #ececec !important;
+}
+
+.collection-item i {
+  display: none !important;
+  font-size: 1.2rem;
+}
+.collection-item:hover i {
+  display: inline !important;
+}
+
+img {
+  max-width: 35px;
+}
+
+.collection-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  text-align: left;
+}
+.link-container  {
+  text-align: right;
+}
+.item-container {
+  display: grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+}
+
+#icon-details {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+#icon-details a {
+  text-decoration: none;
+  color: #111;
+}
+
+
+.btn{
+  position: relative  !important;
+  overflow: hidden  !important;
+  margin :10px  !important;
+}
+
+.btn:after {
+  content: ''  !important;
+  position: absolute  !important;
+  top: 50%  !important;
+  left: 50%  !important;
+  width: 5px  !important;
+  height: 5px  !important;
+  background: rgba(255, 255, 255, .5)  !important;
+  opacity: 0  !important;
+  border-radius: 100%  !important;
+  transform: scale(1, 1) translate(-50%) !important;
+  transform-origin: 50% 50%  !important;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.btn:focus:not(:active)::after {
+  animation: ripple 1s ease-out !important;
+}
+
+@media(max-width: 800px) {
+  .collection-item i {
+    display: inline !important;
+  }
+}
+
+.brand-logo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-logo {
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.brand-logo {
+  padding: 0 20px !important;
+}
+
+.menu-logo > div {
+  display: inline;
+  padding: 0 20px;
+  
+}
