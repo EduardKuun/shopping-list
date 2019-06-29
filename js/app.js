@@ -113,7 +113,7 @@ function addItem(e) {
     itemInput.focus();
     itemInput.select();
     M.Toast.dismissAll();
-    M.toast({html: 'Item added!', classes: 'green'});
+    M.toast({html: 'Item added!', classes: 'alertColor'});
   }
   
   e.preventDefault();
@@ -135,7 +135,7 @@ function modifyItem(e) {
     e.target.parentElement.parentElement.parentElement.remove();
     removeItemFromLocalStorage(e.target.parentElement.parentElement.parentElement);
     M.Toast.dismissAll();
-    M.toast({html: 'Item removed!', classes: 'green'});
+    M.toast({html: 'Item removed!', classes: 'alertColor'});
   }
   if(e.target.parentElement.classList.contains('check-item')) {
     e.target.parentElement.parentElement.parentElement.style.filter = 'grayscale(100%)';
@@ -150,7 +150,7 @@ function modifyItem(e) {
     });
     localStorage.setItem('checked', JSON.stringify(checked));
     M.Toast.dismissAll();
-    M.toast({html: 'Item checked!', classes: 'green'});
+    M.toast({html: 'Item checked!', classes: 'alertColor'});
   }
   
 }
@@ -193,7 +193,7 @@ function clearItems() {
   if (itemList.firstChild) {
     clearItemsFromLocalStorage();
     M.Toast.dismissAll();
-    M.toast({html: 'Items cleared!', classes: 'green'});
+    M.toast({html: 'Items cleared!', classes: 'alertColor'});
   }
   while(itemList.firstChild) {
     itemList.removeChild(itemList.firstChild);

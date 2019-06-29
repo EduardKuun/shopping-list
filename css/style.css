@@ -47,7 +47,7 @@
   display: inline !important;
 }
 
-img {
+.collection img {
   max-width: 35px;
 }
 
@@ -69,6 +69,9 @@ img {
   justify-items: left;
   text-align: left;
 }
+.container {
+  margin-top: 50px;
+}
 
 #icon-details {
   margin: auto;
@@ -83,21 +86,25 @@ img {
 
 
 .btn{
-  position: relative  !important;
-  overflow: hidden  !important;
-  margin :10px  !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin: 10px !important;
+  background-color: #065471 !important;
+}
+.btn:hover {
+  background-color: #065471;
 }
 
 .btn:after {
-  content: ''  !important;
-  position: absolute  !important;
-  top: 50%  !important;
-  left: 50%  !important;
-  width: 5px  !important;
-  height: 5px  !important;
-  background: rgba(255, 255, 255, .5)  !important;
-  opacity: 0  !important;
-  border-radius: 100%  !important;
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 5px !important;
+  height: 5px !important;
+  background: rgba(255, 255, 255, .5) !important;
+  opacity: 0 !important;
+  border-radius: 100% !important;
   transform: scale(1, 1) translate(-50%) !important;
   transform-origin: 50% 50%  !important;
 }
@@ -127,24 +134,31 @@ img {
   }
 }
 
-.brand-logo {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.nav-wrapper {
+  background-color: #065471;
+  min-height: 80px;
 }
 
 .menu-logo {
   text-align: center;
+  background-color: #065471;
+  min-height: 50px;
+}
+.menu-logo img {
+  padding: 6px;
+  width: 130px;
+}
+
+.nav-wrapper .brand-logo img {
   padding: 10px;
-  background-color: #4caf50;
-  color: #fff;
-  font-size: 2rem;
+  width: 150px;
 }
 
-.brand-logo {
-  padding: 0 20px !important;
+.nav-wrapper ul li a {
+  min-height: 80px;
+  padding-top: 5px;
 }
 
-.menu-logo > div {
-  display: inline;
-  padding: 0 20px;
-  
+.alertColor {
+  background-color: #065471 !important;
 }
